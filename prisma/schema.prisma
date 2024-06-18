@@ -9,12 +9,12 @@ generator client {
 }
 
 model User {
-  id    String    @id 
-  email String @unique
+  id        String  @id
+  email     String  @unique
   firstName String
-  lastName String
-  imageUrl String?
-  userName String? @unique
+  lastName  String
+  imageUrl  String?
+  userName  String? @unique
 
   createdAt DateTime @default(now())
 }
